@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VR PARKING SYSTEM...</title>
+	<link rel="stylesheet" type="text/css" href="parking.css">
+    <script src="parking.js"></script>
+
+</head>
+<body>
+ <div class="main">	
+   <div class="header">
+   	 <div class="header1">
+   	 	<img src="image/logo.png" height="100px" width="100%">
+   	 </div>
+   	 <div class="header2">
+   	 	<h1>
+   	 	<< WELCOME TO VR PARKING >>
+   	    </h1>
+   	 </div>
+   </div>
+   <div class="body">
+   	  <div class="body1">
+         <table>
+          <tr>
+          	<th><h2>Parking facility Info-</h2></th>
+          </tr>
+          <tr>
+           <td><h3>1.Add bike</h3></td>
+          </tr>
+          <tr>
+           <td><h3>2.Remove bike</h3></td>
+          </tr>
+          <tr>
+           <td><h3>3.Add car</h3></td>
+          </tr>
+          <tr>
+           <td><h3>4.Remove car</h3></td>
+          </tr>
+          <tr>
+           <td><h3>5.Total bill</h3></td>
+          </tr>
+          <tr>
+            <th><h2>Other facility-</h2></th>
+          </tr>
+          <tr>
+            <td><h3>1.Cheak no. of bike</h3></td>
+          </tr>
+          <tr>
+           <td><h3>2.Cheak no. of car</h3></td>
+          </tr>
+         </table>
+        </div>
+        <div class="body1">
+         <table>
+          <tr>
+           <th><h2>Please fill details & click on submit-</h2></th>
+          </tr>
+          <tr>
+            <td><h3>Select option-</h3></td>
+          </tr>
+          <tr>
+           <td>
+             <select id="val1">
+               <optgroup label="Bike">
+                  <option value="" disabled selected hidden>Select your choice</option>
+                  <option value="1">Add Bike</option>
+                  <option value="2">Remove bike</option>
+               </optgroup>
+               <optgroup label="Car">
+                 <option value="3">Add car</option>
+                 <option value="4">Remove car</option>
+               </optgroup>
+               <optgroup label="Total Bill-">
+                 <option value="5">Total bill</option>
+               </optgroup>
+             </select>
+           </td>
+          </tr>
+          <tr>
+            <td><h3>Enter number-</h3>
+            </td>
+          </tr>
+          <tr>
+             <td><input type="number" id="val2" placeholder="number of bike/car"/>
+             </td>
+          </tr>
+          <tr>
+              <td><button onclick="a()">submit</button></td>
+          </tr>
+       </table>
+   </div>
+   <div class="body1">
+     <table border="1">
+       <tr>
+         <th colspan="4">Total parking slot-</th>
+       </tr>
+       <tr>
+          <th rowspan="2" colspan="2">maxium parking = 100.</th>
+          <td colspan="2">maxium parking of bike = 40.</td>
+       </tr>
+       <tr>
+          <td colspan="2">maxium parking of car = 60.</td>
+       </tr>
+       <tr>
+         <th colspan="4">Current parking slot-</th>
+       </tr>
+       <tr>
+          <td>Number of park bike</td>
+          <th id="res1">00</th>
+          <td>Available space for bike-</td>
+          <th id="res2">40</th>
+       </tr>
+       <tr>
+          <td>Number of park car</td>
+          <th id="res3">00</th>
+          <td>Available space for car-</td>
+          <th id="res4">60</th>
+       </tr>
+       <tr>
+         <th colspan="4"></br></th>
+       </tr>
+       <tr>
+          <th colspan="4">PAY BILLS-></th>
+       </tr>
+       <tr>
+         <td colspan="4">
+       
+             <table>
+              <tr>
+              <th>Your bills-</th>
+              </tr>
+              <tr>
+              <td>For bike(20 Rs. for one bike)-</td>
+              <th id="res5">00</th>
+              </tr>
+              <tr>
+              <td>For car(50 Rs. for one car)-</td>
+              <th id="res6">00</th>
+              </tr>
+              <tr>
+              <td>Total bill-</td>
+              <th id="res7">00</th>
+              </tr>
+             </table>
+           </td>
+       </tr>
+      </table>    
+     </div>
+   </div>
+   <div class="footer">
+   	   <marquee>@VR parking 2022</marquee>
+   </div>
+ </div>
+</body>
+</html>

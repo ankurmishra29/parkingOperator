@@ -1,0 +1,90 @@
+*
+{
+	margin: 0;
+}
+.main 
+{
+	height: 100%;
+	width: 100%;
+}
+h1 
+{
+	margin-top: 25px;
+}
+.header
+{
+	height: 100px;
+	width:100%;
+	color: white;
+	background-color: red;
+	text-align: center;
+}
+.header1
+{
+	height: 70%;
+	width: 10%;
+	float: left;
+	display: center;
+	margin-left: 10%;
+}
+.header2
+{
+	width: 80%;
+	float: left;
+
+}
+.body
+{
+    height: 500px;
+	width: 100%; 
+	background-image: url("image/parking.png");
+	background-image-opacity: 0.5 ;
+	background-size: 33.3% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: greenyellow;
+}
+.body1
+{
+	float: left;
+	width: 33.33%;
+	height: 100%;
+}
+.footer
+{
+	height: 30px;
+	width: 100%;
+	color: white;
+	background-color: black;
+	text-align: right;
+}
+table
+{
+	height: 100%;
+	width: 100%;
+	border: 2px solid black;
+	font-style: normal;
+}
+button
+{
+	color: white;
+	background-color: blue;
+	height: 50px;
+	width: 100px;
+}
+select
+{
+	height: 50px;
+	width: 80%;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}
+input
+{
+	height: 30px;
+	width: 80%;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}
