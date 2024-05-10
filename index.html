@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>VR PARKING SYSTEM...</title>
+	  <link rel="stylesheet" type="text/css" href="parking.css">
+    <link rel="icon" type="image/x-icon" href="image\logo.png">
+    <script src="parking.js"></script>
+  </head>
+  <body>
+   <div class="main">	
+     <div class="header">
+   	   <div class="header1">
+   	 	   <img src="image/logo.png" height="100px" width="100%">
+   	   </div>
+   	   <div class="header2">
+   	 	   <h1>
+   	 	     << WELCOME TO VR PARKING >>
+   	     </h1>
+   	   </div>
+     </div>
+     <div class="body">
+   	   <div class="body1">
+         <div class="body12">
+           <table>
+             <tr>
+          	    <td><h2>About facility-</h2></br><h3>1.Add bike</br>2.Remove bike</br>3.Add car</br>4.Remove car</br>5.Total bill</h3>
+                </td>
+             </tr>
+           </table>
+         </div>
+         <div class="body12">
+           <table>
+             <tr>
+               <td><h2>Other facility-</h2></br><h3>1.Cheak no. of bike</br>2.Cheak no. of car</h3></br></br>
+               </td>
+             </tr>
+           </table>
+         </div>
+       </div>
+       <div class="body2">
+         <table>
+           <tr>
+             <th><h2>Please fill details & click on submit-</h2></th>
+           </tr>
+           <tr>
+             <td><h3> 1. Parking holder Name: <span class="required">*</span></h3></td>
+           </tr>
+           <tr>
+             <td><input type="text" id="val0" placeholder="Please enter your name" required></td>
+           </tr>
+           <tr>
+            <td><h3> 2. Select your parking option & more:<span class="required">*</span></h3></td>
+           </tr>
+           <tr>
+             <td>
+               <select id="val1" required >
+                 <optgroup label="Bike">
+                   <option value="" disabled selected hidden>Select your choice</option>
+                   <option value="1">(i) Add Bike</option>
+                   <option value="2">(ii) Remove bike</option>
+                 </optgroup>
+                 <optgroup label="Car">
+                   <option value="3">(i) Add car</option>
+                   <option value="4">(ii) Remove car</option>
+                 </optgroup>
+                 <optgroup label="Total Bill-">
+                   <option value="5">Total bill</option>
+                 </optgroup>
+               </select>
+             </td>
+           </tr>
+           <tr>
+              <td><h3> 3. Enter number of Bike/Car: <span class="required">*</span></h3>
+              </td>
+           </tr>
+           <tr>
+             <td><input type="number" id="val2" placeholder="number of bike/car" required>
+             </td>
+           </tr>
+           <tr>
+             <td><h3> 4. Vehicle Number: <span class="required">*</span></h3></td>
+           </tr>
+           <tr>
+             <td><input type="text" id="val3" placeholder="format: xx 01 xyz 0123" required></td>
+           </tr>
+           <tr><td><span class="required">* Required field</span></td></tr>
+           <tr>
+              <td><button type="submit" onclick="a()"><h3>Submit</h3></button></td>
+              <td><button type="button"><a href="index.html">Refresh</a>
+              </button></td>
+           </tr>
+         </table>
+       </div>
+       <div class="body2">
+          <table border="1">
+            <tr>
+              <th colspan="4">Total parking slot-</th>
+           </tr>
+           <tr>
+             <th rowspan="2" colspan="2">maxium parking = 100.</th>
+             <td colspan="2">maxium parking of bike = 40.</td>
+           </tr>
+           <tr>
+             <td colspan="2">maxium parking of car = 60.</td>
+           </tr>
+           <tr>
+             <th colspan="4">Current parking slot-</th>
+           </tr>
+           <tr>
+             <td>Number of park bike</td>
+             <th id="res1">00</th>
+             <td>Available space for bike-</td>
+             <th id="res2">40</th>
+           </tr>
+           <tr>
+             <td>Number of park car</td>
+             <th id="res3">00</th>
+             <td>Available space for car-</td>
+             <th id="res4">60</th>
+           </tr>
+           <tr>
+             <th colspan="4"></br></th>
+           </tr>
+           <tr>
+             <th colspan="4">Parking charges:></th>
+           </tr>
+           <tr>
+              <td colspan="4">
+       
+               <table>
+                 <tr>
+                   <td><b>Your bill details:</b></td>
+                 </tr>
+                 <tr>
+                   <td>Holder's name-</td>
+                   <th id="res0">_ _ _</th>
+                 </tr>
+                 <tr>
+                   <td>Vehicle number-</td>
+                   <th id="res8">_ _ _</th>
+                 </tr>
+                 <tr>
+                   <td>For bike(20 Rs. for one bike)-</td>
+                   <th id="res5">00</th>
+                 </tr>
+                 <tr>
+                   <td>For car(50 Rs. for one car)-</td>
+                   <th id="res6">00</th>
+                 </tr>
+                 <tr>
+                   <td>Total bill-</td>
+                   <th id="res7">00</th>
+                 </tr>
+               </table>
+             </td>
+           </tr>
+         </table>    
+       </div>
+     </div>
+     <div class="footer">
+   	   <marquee><h3>@VR parking 2022 by ankur29mishra</h3></marquee>
+     </div>
+   </div>
+ </body>
+</html>
